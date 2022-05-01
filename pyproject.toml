@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "Sissy"
+version = "0.1.0"
+description = ""
+authors = ["OsaeAddo <immanueloaddo@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Django = "4.0.4"
+djangorestframework = "3.13.1"
+django-cors-headers = "3.11.0"
+django-rest-auth = "0.9.5"
+django-allauth = "0.50.0"
+PyYAML = "6.0"
+django-rest-swagger = "2.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
