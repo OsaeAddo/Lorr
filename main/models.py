@@ -70,7 +70,7 @@ class OrderItem(models.Model):
     
     def get_total_item_price(self):
         """
-        return total price of each item.
+        returns total price of each item.
         e.g 3 orders of a white shirt that costs $20 each will return 
         $60 as the get_total_item_price()
 
@@ -79,9 +79,11 @@ class OrderItem(models.Model):
         """
         return self.item.price * self.quantity
     
+    
+    
     def get_discount_item_price(self):
         """
-        return the total price of each item with discount applied
+        returns the total price of each item with discount applied
 
         Returns:
             _type_: _float_
@@ -92,7 +94,7 @@ class OrderItem(models.Model):
     
     def get_total_amount_saved(self):
         """
-        return amount customer saves if discount is applied to the item
+        returns amount of money customer saves if discount is applied to the item
 
         Returns:
             _type_: _description_
@@ -120,7 +122,8 @@ class Order(models.Model):
     
     
     def get_total_price(self):
-        """return total price of all ordered items
+        """
+        returns the total amount in price of all ordered items
         """
         total = 0
         for order_item in self.items.all():
