@@ -15,7 +15,7 @@ ALLOWED_HOSTS = [
 #3rd party, to communicate with the port of the React app for our frontend
 CORS_ORIGIN_WHITELIST = (
     'http://localhost:3000', #default React port
-    'htpp://localhost:8000', #default django port
+    'http://localhost:8000', #default django port
 )
 
 
