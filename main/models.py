@@ -90,6 +90,19 @@ class OrderItem(models.Model):
     
     
     
+    def get_total_amount_saved(self):
+        """
+        return amount customer saves if discount is applied to the item
+
+        Returns:
+            _type_: _description_
+        """
+        return self.get_total_item_price() - self.get_discount_item_price()
+
+        
+        
+    
+    
     
     
     
