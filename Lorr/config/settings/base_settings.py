@@ -36,7 +36,7 @@ INSTALLED_APPS = [
     
     #3rd party
     'rest_framework',
-    'corhsheaders',
+    'corsheaders',
 ]
 
 REST_FRAMEWORK = {
