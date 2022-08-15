@@ -12,7 +12,11 @@ ALLOWED_HOSTS = [
     '127.0.0.1',
 ]
 
-
+#3rd party, to communicate with the port of the React app for our frontend
+CORS_ORIGIN_WHITELIST = (
+    'http://localhost:3000',
+    'htpp://localhost:8000',
+)
 
 
 DATABASES = {
