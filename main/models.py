@@ -93,3 +93,13 @@ class Order(models.Model):
     
     def __str__(self):
         return self.user.username
+    
+    
+    def get_total_price(self):
+        """return total price of all ordered items
+        """
+        total = 0
+        for order_item in self.items.all():
+            total += order_item.get_final_price()
+            
+        return total
