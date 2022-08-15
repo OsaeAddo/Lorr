@@ -79,6 +79,17 @@ class OrderItem(models.Model):
         """
         return self.item.price * self.quantity
     
+    def get_discount_item_price(self):
+        """
+        return the total price of each item with discount applied
+
+        Returns:
+            _type_: _float_
+        """
+        return self.item.discount_price * self.quantity
+    
+    
+    
     
     
     
