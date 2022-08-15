@@ -44,7 +44,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'Lorr.urls'
+ROOT_URLCONF = 'Lorr.config.urls'
 
 TEMPLATES = [
     {
