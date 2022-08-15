@@ -7,6 +7,11 @@ from main.models import Item, Order, OrderItem
 from .serializers import ItemSerializer
 
 
-class ItemApiView(generics.ListAPIView):
+class ListItemView(generics.ListAPIView):
+    queryset = Item.objects.all()
+    serializer_class = ItemSerializer
+    
+    
+class DetailItemView(generics.RetrieveAPIView):
     queryset = Item.objects.all()
     serializer_class = ItemSerializer
