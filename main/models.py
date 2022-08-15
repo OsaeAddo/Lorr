@@ -68,6 +68,19 @@ class OrderItem(models.Model):
     def __str__(self):
         return f"{self.quantity} of {self.item.item_name}"
     
+    def get_total_item_price(self):
+        """
+        return total price of each item.
+        e.g 3 orders of a white shirt that costs $20 each will return 
+        $60 as the get_total_item_price()
+
+        Returns:
+            _type_: float
+        """
+        return self.item.price * self.quantity
+    
+    
+    
     
 
 class Order(models.Model):
