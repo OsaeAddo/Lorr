@@ -100,12 +100,23 @@ class OrderItem(models.Model):
             _type_: _description_
         """
         return self.get_total_item_price() - self.get_discount_item_price()
+    
+    
+    
+    def get_price_used(self):
+        """
+        returns the final method used to evaluate the price of the item
+        i.e if actual price is used or discounted price is used instead.
+
+        Returns:
+            _type_: _func_
+        """
+        if self.item.discount:
+            return self.get_discount_item_price()
+        
+        return self.get_total_item_price()
 
         
-        
-    
-    
-    
     
     
 
