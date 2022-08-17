@@ -33,7 +33,7 @@ class App extends Component {
         {this.state.items.map(
           item => (
             <div key={item.id}>
-              <h1>{item.item_name}</h1>
+              <h1 className="text-3xl font-bold underline">{item.item_name}</h1>
               <p>{item.price}</p>
               <p>{item.discount_price}</p>
               <p>{item.category}</p>
