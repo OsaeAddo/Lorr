@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 
 
-import {Navbar, Footer} from './components'
+import {Navbar, Footer} from "./components";
 
 
 class App extends Component {
