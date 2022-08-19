@@ -1,4 +1,6 @@
 import React from "react";
+import { motion } from "framer-motion"
+
 import { Navbar, Footer, Items } from "../components/all-components";
 
 
