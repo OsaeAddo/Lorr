@@ -1,5 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion"
+// import { motion } from "framer-motion"
+// import { FaBeer } from 'react-icons/fa';
+
+
 
 import { Navbar, Footer, Items } from "../components/all-components";
 
@@ -10,6 +13,7 @@ const Home = () => {
     <div className='min-h-screen'>
         <div className=''>
             <Navbar />
+            {/* <FaBeer /> */}
         </div>
 
         <div>
