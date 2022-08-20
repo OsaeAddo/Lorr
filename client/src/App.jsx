@@ -10,8 +10,8 @@ const App = () => {
   
   return (
     <Router>
-      <Switch>
-        <Route path="/" exact component={Home} />
+      <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="" />
       </Switch>
     </Router>
