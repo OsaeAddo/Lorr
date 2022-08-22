@@ -14,7 +14,7 @@ const Footer = () => {
                         <li>Category</li>
                         <li>Promo</li>
                         <li>Bridal Wear</li>
-                        <li>Tops</li>
+                        <li>Evening Wear</li>
                     </ul>
                 </section>
                 <section className="text-start">
