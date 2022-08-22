@@ -24,7 +24,6 @@ const Footer = () => {
                         <li>Evening Wear</li>
                         <li>Casual</li>
                         <li>Corsettes</li>
-                        <li>Casual Wear</li>
                         <li>Tops</li>
                     </ul>
                 </section>
