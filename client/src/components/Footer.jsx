@@ -47,8 +47,8 @@ const Footer = () => {
                 </section>
             </div>
 
-            <div className="w-1/2">
-                <img className="w-16 mx-auto" src={logo} alt="L'orr-logo" />
+            <div className="w-1/2 mx-auto">
+                <img className="w-16" src={logo} alt="L'orr-logo" />
             </div>
             <div className="">&copy; Copyright 2022</div>
         </footer>
