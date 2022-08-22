@@ -21,6 +21,8 @@ const Footer = () => {
                     <h2 className="font-bold text-2xl">Services</h2>
                     <ul>
                         <li>Bridal Wear</li>
+                        <li>Evening Wear</li>
+                        <li>Casual</li>
                         <li>Corsettes</li>
                         <li>Casual Wear</li>
                         <li>Tops</li>
