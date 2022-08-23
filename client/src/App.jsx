@@ -12,7 +12,10 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="" />
+
+        <Route path="admin/" element={<AdminLayout />}> //url route for admin related pages
+          <Route index element={<AdminHome />} />
+        </Route>
       </Routes>
     </Router>
   )
