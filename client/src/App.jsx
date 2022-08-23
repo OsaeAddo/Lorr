@@ -1,8 +1,8 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route, Switch, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
 
 
-import { Home } from "./pages/all-pages"
+import { Home, AdminHome, AdminLayout } from "./pages/all-pages"
 
 
 
@@ -13,9 +13,10 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
 
-        <Route path="admin/" element={<AdminLayout />}> //url route for admin related pages
+        <Route path="admin/" element={<AdminLayout />}> {/*url route for admin related pages*/}
           <Route index element={<AdminHome />} />
         </Route>
+        
       </Routes>
     </Router>
   )
