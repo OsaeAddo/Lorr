@@ -10,11 +10,11 @@ import { Navbar, Footer, Items } from "../components/all-components";
 const Home = () => {
 
     return (
-    <div className='min-h-screen'>
-        <div className=''>
-            <Navbar />
-            {/* <FaBeer /> */}
-        </div>
+        <div className='min-h-screen'>
+            <div className=''>
+                <Navbar />
+                {/* <FaBeer /> */}
+            </div>
 
         <div>
             <Items />
