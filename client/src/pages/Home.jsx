@@ -16,9 +16,9 @@ const Home = () => {
                 {/* <FaBeer /> */}
             </div>
 
-        <div>
-            <Items />
-        </div>
+            <div>
+                <Items />
+            </div>
 
         <div>
             <Footer />
