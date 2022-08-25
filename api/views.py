@@ -40,7 +40,7 @@ class OrderItemView(generics.ListAPIView):
     queryset = OrderItem.objects.all()
     serializer_class = OrderItemSerializer
     
-    
+
 class DetailOrderItemView(generics.RetrieveAPIView):
     """
     Display each ordered item
