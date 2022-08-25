@@ -113,7 +113,7 @@ def remove_from_cart(request, pk):
 
 def reduce_quantity_item(request, pk):
     """
-    reduce quantity of an item,
+    reduce quantity of an item in a customer's Order Items,
     remove it if quantity is 0
 
     Args:
