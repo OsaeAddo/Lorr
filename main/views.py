@@ -1,5 +1,6 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.core.exceptions import ObjectDoesNotExist
 from django.views.generic import ListView, DetailView, View
@@ -27,14 +28,14 @@ class OrderSummaryView(LoginRequiredMixin, View):
             context = {
                 'object': order
             }
-            return render(self.request, '', context)
+            return render(self.request, 'order_summary.html', context)
         
         except ObjectDoesNotExist:
             messages.error(self.request, "You do not have an order.")
             return redirect("/")
 
 
-    
+@login_required    
 def add_to_cart(request, pk):
     """_summary_
     add a product to OrderItem, and
@@ -73,7 +74,7 @@ def add_to_cart(request, pk):
         return redirect("core:order-summary", pk=pk)
     
 
-
+@login_required    
 def remove_from_cart(request, pk):
     """
     remove all products from OrderItem,
@@ -109,8 +110,9 @@ def remove_from_cart(request, pk):
         messages.info(request, "You do not have an order")
         return redirect("core:order-summary", pk=pk)
     
+  
     
-
+@login_required 
 def reduce_quantity_item(request, pk):
     """
     reduce quantity of an item in a customer's Order Items,
