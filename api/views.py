@@ -23,9 +23,24 @@ class OrderView(generics.ListAPIView):
     serializer_class = OrderSerializer
     
     
+class DetailOrderView(generics.RetrieveAPIView):
+    queryset = Order.objects.all()
+    serializer_class = OrderSerializer
+
+
+
+
+    
+#<-------- for both admin(read-only) & customers(read-write)
 class OrderItemView(generics.ListAPIView):
     queryset = OrderItem.objects.all()
     serializer_class = OrderItemSerializer
     
     
+class DetailOrderItemView(generics.RetrieveAPIView):
+    queryset = OrderItem.objects.all()
+    serializer_class = OrderItemSerializer
+    
+    
+
 
