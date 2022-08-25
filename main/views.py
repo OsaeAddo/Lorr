@@ -108,3 +108,7 @@ def remove_from_cart(request, pk):
     else:
         messages.info(request, "You do not have an order")
         return redirect("core:product", pk=pk)
+    
+    
+    
+    
