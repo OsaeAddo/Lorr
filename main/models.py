@@ -26,6 +26,10 @@ class Item(models.Model):
     description = models.TextField()
     
     
+    class Meta:
+        verbose_name_plural = "Items"
+    
+    
     def __str__(self):
         return self.item_name
     
