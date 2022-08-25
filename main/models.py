@@ -68,6 +68,8 @@ class OrderItem(models.Model):
     ordered = models.BooleanField(default=False)
     quantity = models.IntegerField(default=1)
     
+    class Meta:
+        verbose_name_plural = "Order Items"
     
     def __str__(self):
         return f"{self.quantity} of {self.item.item_name}"
