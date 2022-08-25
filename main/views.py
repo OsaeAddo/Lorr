@@ -111,4 +111,42 @@ def remove_from_cart(request, pk):
     
     
     
+def reduce_quantity_item(request, pk):
+    """
+    reduce quantity of an item,
+    remove it if quantity is 0
+
+    Args:
+        request (_type_): _description_
+        pk (_type_): _description_
+    """
+    item = get_object_or_404(Item, pk=pk)
+    order_qs = Order.objects.filter(
+        user=request.user,
+        ordered=False
+    )
+    
+    if order_qs.exists():
+        order = order_qs[0]
+
+        if order.items.filter(item__pk = item.pk).exists():
+            order_item = OrderItem.objects.filter(
+                user = request.user,
+                item = item,
+                ordered = False
+            )[0]
+            
+            if order_item.quantity > 1: 
+                order_item.quantity -= 1
+                order_item.save()
+            else: #remove item if it's quantity is 0
+                order_item.delete()
+                
+            messages.info(request, "Item quantity was updated")
+            return redirect("core:order-summary")
+        else:
+            messages.info(request, "This item is not in your cart")
+            return redirect("core:order-summary")
+        
+    else:
     
