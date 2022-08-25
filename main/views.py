@@ -110,7 +110,7 @@ def remove_from_cart(request, pk):
         return redirect("core:product", pk=pk)
     
     
-    
+
 def reduce_quantity_item(request, pk):
     """
     reduce quantity of an item,
