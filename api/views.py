@@ -17,7 +17,7 @@ class DetailItemView(generics.RetrieveAPIView):
     serializer_class = ItemSerializer
     
     
-    
+
 class OrderView(generics.ListAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
