@@ -4,7 +4,7 @@ from rest_framework import generics
 
 from main.models import Item, Order, OrderItem
 
-from .serializers import ItemSerializer
+from .serializers import ItemSerializer, OrderSerializer, OrderItemSerializer
 
 
 class ListItemView(generics.ListAPIView):
