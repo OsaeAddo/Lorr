@@ -57,12 +57,12 @@ def add_to_cart(request, pk):
             order_item.quantity += 1
             order_item.save()
             messages.info(request, "Added quantity Item")
-            return redirect("core:product", pk=pk)
+            return redirect("core:order-summary", pk=pk)
         # add an orderitem to the order
         else:
             order.items.add(order_item)
             messages.info(request, "Item add to your cart")
-            return redirect("core:product", pk=pk)
+            return redirect("core:order-summary", pk=pk)
         
     # if user has no order, create a new order & add an orderitem
     else:
@@ -70,7 +70,7 @@ def add_to_cart(request, pk):
         order = Order.objects.create(user=request.user, ordered_date=ordered_date)
         order.items.add(order_item)
         messages.info(request, "Item added to your cart")
-        return redirect("core:product", pk=pk)
+        return redirect("core:order-summary", pk=pk)
     
 
 
@@ -99,15 +99,15 @@ def remove_from_cart(request, pk):
             )[0]
             order_item.delete()
             messages.info(request, f"Item {order_item.item.item_name} removed from your cart")
-            return redirect("core:product", pk=pk)
+            return redirect("core:order-summary", pk=pk)
         else:
             messages.info(request, "This item is not in your cart")
-            return redirect("core:product", pk=pk)
+            return redirect("core:order-summary", pk=pk)
         
     #if there is no Order in the cart
     else:
         messages.info(request, "You do not have an order")
-        return redirect("core:product", pk=pk)
+        return redirect("core:order-summary", pk=pk)
     
     
 
