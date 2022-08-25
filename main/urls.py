@@ -1,6 +1,9 @@
 from django.urls import path
 
-from .views import HomeView, ProductView, add_to_cart, remove_from_cart
+from .views import (
+    HomeView, ProductView, OrderSummaryView, 
+    add_to_cart, remove_from_cart, reduce_item_quantity
+)
 
 urlpatterns = [
     path('', HomeView.as_view(), name="home"),
