@@ -16,6 +16,14 @@ class ItemSerializer(serializers.ModelSerializer):
 class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
+            'user', 'items',
+            'start_date', 'ordered_date', 'ordered'
+        )
+        
+
+class OrderItemSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
             'user', 'item',
             'ordered', 'quantity'
         )
