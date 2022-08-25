@@ -27,4 +27,3 @@ class OrderItemSerializer(serializers.ModelSerializer):
             'user', 'item',
             'ordered', 'quantity'
         )
-        
