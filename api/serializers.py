@@ -11,3 +11,12 @@ class ItemSerializer(serializers.ModelSerializer):
             'item_name', 'price', 'discount_price', 
             'category', 'label', 'description'
         )
+        
+        
+class OrderSerializer(serializers.ModelSerializer):
+    class Meta:
+        fields = (
+            'user', 'item',
+            'ordered', 'quantity'
+        )
+        
