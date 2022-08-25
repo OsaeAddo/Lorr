@@ -17,7 +17,7 @@ class ProductView(DetailView):
     model = Item
     template_name = "main/product.html"
     
-    
+
 class OrderSummaryView(LoginRequiredMixin, View):
     def get(self, *args, **kwargs):
         try:
