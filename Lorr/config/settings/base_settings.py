@@ -37,6 +37,14 @@ INSTALLED_APPS = [
     #3rd party
     'rest_framework',
     'corsheaders',
+    
+    #auth
+    
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth',
+    'dj_rest_auth.registration',
 ]
 
 REST_FRAMEWORK = {
