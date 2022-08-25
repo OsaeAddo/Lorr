@@ -18,6 +18,20 @@ class ProductView(DetailView):
     template_name = "main/product.html"
     
     
+class OrderSummaryView(LoginRequiredMixin, View):
+    def get(self, *args, **kwargs):
+        try:
+            order = Order.objects.get(user=self.request.user, ordered=False)
+            context = {
+                'object': order
+            }
+            return render(self.request, '', context)
+        
+        except ObjectDoesNotExist:
+            messages.error(self.request, "You do not have an order.")
+            return redirect("/")
+
+
     
 def add_to_cart(request, pk):
     """_summary_
