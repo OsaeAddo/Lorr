@@ -134,6 +134,10 @@ class Order(models.Model):
     ordered = models.BooleanField(default=False)
     
     
+    class Meta:
+        verbose_name_plural = "Orders"
+    
+    
     def __str__(self):
         return self.user.username
     
