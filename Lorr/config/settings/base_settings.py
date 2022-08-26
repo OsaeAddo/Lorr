@@ -36,7 +36,10 @@ INSTALLED_APPS = [
     'main.apps.MainConfig',
     'api.apps.ApiConfig',
     
-    #3rd party
+    # <------ 3rd party ------>
+    # connect to frontend
+    'corsheaders',
+    # api 
     'rest_framework',
     'corsheaders',
     
