@@ -45,7 +45,7 @@ class Item(models.Model):
     
     def get_add_to_cart_url(self):
         return reverse(
-            "core: add-to-cart",
+            "main: add-to-cart",
             kwargs = {
                 "pk": self.pk
             }
