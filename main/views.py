@@ -108,7 +108,7 @@ def remove_from_cart(request, pk):
     #if there is no Order in the cart
     else:
         messages.info(request, "You do not have an order")
-        return redirect("core:order-summary", pk=pk)
+        return redirect("main:order-summary", pk=pk)
     
   
     
