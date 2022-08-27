@@ -16,7 +16,7 @@ LABEL = (
     ('BS', 'Best Seller')
 )
 
-
+#Todo: add stock(quantity) of an item available
 class Item(models.Model):
     item_name = models.CharField(max_length=100)
     price = models.FloatField()
