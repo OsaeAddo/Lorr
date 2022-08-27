@@ -72,7 +72,7 @@ class OrderItem(models.Model):
         verbose_name_plural = "Order Items"
     
     def __str__(self):
-        return f"{self.quantity} of {self.item.item_name}"
+        return f"{self.quantity} of {self.item.item_name} from {self.user}"
     
     def get_total_item_price(self):
         """
