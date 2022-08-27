@@ -11,7 +11,7 @@ class Items extends Component {
     // Ensure that Api call is made at correct time during 
     // the React lifecycle
     componentDidMount() {
-    this.getItems()
+      this.getItems()
     }
     
     getItems() {
