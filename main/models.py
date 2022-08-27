@@ -54,7 +54,7 @@ class Item(models.Model):
         
     def get_remove_from_cart_url(self):
         return reverse(
-            "core: remove-from-cart",
+            "main: remove-from-cart",
             kwargs = {
                 "pk": self.pk
             }
