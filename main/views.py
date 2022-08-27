@@ -57,8 +57,8 @@ def add_to_cart(request, pk):
         if order.items.filter(item__pk = item.pk).exists():
             order_item.quantity += 1
             order_item.save()
-            messages.info(request, "Added quantity Item")
-            return redirect("core:order-summary", pk=pk)
+            messages.info(request, f"Added 1 of {order_item.item} to your Cart.")
+            return redirect("core:product", pk=pk)
         # add an orderitem to the order
         else:
             order.items.add(order_item)
