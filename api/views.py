@@ -11,6 +11,12 @@ class ProductListView(generics.ListCreateAPIView):
     queryset = Item.objects.all()
     serializer_class = ItemSerializer
     
+    #retrieve a user's ip address
+    def user_ip_address(self, request):
+        ip_addr = request.META['REMOTE_ADDR']
+        return ip_addr
+        
+    
     
 class ProductDetailView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Item.objects.all()
