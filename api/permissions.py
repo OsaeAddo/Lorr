@@ -1,5 +1,5 @@
 from rest_framework import permissions
 
 
-class IsAdminorReadOnly(permissions.BasePermission):
+class IsAdminOrReadOnly(permissions.BasePermission):
     pass
