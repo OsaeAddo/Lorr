@@ -63,7 +63,7 @@ def add_to_cart(request, pk):
         else:
             order.items.add(order_item)
             messages.info(request, f"{order_item.item} added to your Cart")
-            return redirect("core:product", pk=pk)
+            return redirect("main:product", pk=pk)
         
     # if user has no order, create a new order & add an orderitem
     else:
