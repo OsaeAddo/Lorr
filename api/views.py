@@ -24,7 +24,7 @@ class OrderView(generics.ListAPIView):
     serializer_class = OrderSerializer
     
 
-class DetailOrderView(generics.RetrieveAPIView):
+class OrderDetailView(generics.RetrieveAPIView):
     queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
