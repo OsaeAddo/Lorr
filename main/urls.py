@@ -6,7 +6,7 @@ from .views import (
 )
 
 
-app_name = 'core'
+app_name = 'main'
 
 
 urlpatterns = [
