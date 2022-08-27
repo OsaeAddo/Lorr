@@ -145,7 +145,7 @@ def reduce_item_quantity(request, pk):
                 order_item.delete()
                 
             messages.info(request, "Item quantity was updated")
-            return redirect("core:order-summary")
+            return redirect("main:order-summary")
         
         else: #there's no item in cart
             messages.info(request, "This item is not in your cart")
