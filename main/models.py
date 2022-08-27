@@ -21,7 +21,7 @@ class Item(models.Model):
     item_name = models.CharField(max_length=100)
     price = models.FloatField()
     discount_price = models.FloatField(blank=True, null=True)
-    category = models.CharField(choices=LABEL, max_length=2)
+    category = models.CharField(choices=CATEGORY, max_length=2)
     label = models.CharField(choices=LABEL, max_length=2)
     description = models.TextField()
     
