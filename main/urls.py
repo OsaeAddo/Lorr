@@ -5,6 +5,10 @@ from .views import (
     add_to_cart, remove_from_cart, reduce_item_quantity
 )
 
+
+app_name = 'core'
+
+
 urlpatterns = [
     path('', HomeView.as_view(), name="home"),
     path('product/<pk>/', ProductView.as_view(), name="product"),
