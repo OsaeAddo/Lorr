@@ -61,7 +61,7 @@ class Item(models.Model):
         )
         
 
-
+#OrderItem represents a Cart
 class OrderItem(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     item = models.ForeignKey(Item, on_delete=models.CASCADE)
