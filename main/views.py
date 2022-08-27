@@ -71,7 +71,7 @@ def add_to_cart(request, pk):
         order = Order.objects.create(user=request.user, ordered_date=ordered_date)
         order.items.add(order_item)
         messages.info(request, "Item added to your cart")
-        return redirect("core:order-summary", pk=pk)
+        return redirect("core:product", pk=pk)
     
 
 @login_required    
