@@ -36,7 +36,7 @@ class Item(models.Model):
     
     def get_absolute_url(self):
         return reverse(
-            "core: product", 
+            "main: product", 
             kwargs = {
                 "pk": self.pk
             }
