@@ -59,7 +59,7 @@ class DetailOrderItemView(generics.RetrieveAPIView):
     
 
 
-
+ 
 # Users API 
 class UserViewSet(viewsets.ModelViewSet):
     queryset = get_user_model().objects.all()
