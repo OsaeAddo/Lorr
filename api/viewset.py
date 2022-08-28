@@ -19,3 +19,8 @@ class OrderViewSet(viewsets.ModelViewSet):
     
     
     
+class OrderItemViewSet(viewsets.ModelViewSet):
+    queryset = OrderItem.objects.all()
+    serializer_class = OrderItemSerializer
+    
+    
