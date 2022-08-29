@@ -4,6 +4,7 @@ from django.urls import path
 router = SimpleRouter()
 router.register("products", ProductViewSet, basename="products")
 router.register("orders", OrderViewSet, basename="orders")
+router.register("cart", OrderItemViewSet, basename="cart")
 
 
 
