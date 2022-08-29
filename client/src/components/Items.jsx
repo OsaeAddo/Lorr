@@ -16,7 +16,7 @@ class Items extends Component {
     
     getItems() {
         axios 
-          .get('http://127.0.0.1:8000/api/')
+          .get('http://127.0.0.1:8000/api/v1.0/products')
           .then(res => {
             this.setState({ items: res.data })
           })
