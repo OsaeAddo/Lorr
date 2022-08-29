@@ -2,7 +2,7 @@ from django.urls import path
 
 
 router = SimpleRouter()
-router.register("prodoucts", ProductViewSet, basename="products")
+router.register("products", ProductViewSet, basename="products")
 
 
 
