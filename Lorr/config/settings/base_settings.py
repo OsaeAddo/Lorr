@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # <------ 3rd party ------>
     # connect to frontend
     'corsheaders',
+    'django_extensions',
     # api 
     'rest_framework',
     'rest_framework.authtoken',
@@ -128,7 +129,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-SHELL_PLUS = "BPython"
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
