@@ -1,5 +1,10 @@
 from django.urls import path
 
+from rest_framework.routers import SimpleRouter
+
+# from .views import ProductListView, ProductDetailView
+from .viewset import OrderViewSet, OrderItemViewSet, ProductViewSet
+
 
 router = SimpleRouter()
 router.register("products", ProductViewSet, basename="products")
