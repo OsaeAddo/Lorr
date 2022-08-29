@@ -13,8 +13,7 @@ router.register("cart", OrderItemViewSet, basename="cart")
 
 urlpatterns = router.urls
 
-
-urlpatterns = [
-    path('', ProductListView.as_view()),
-    path('product/<int:pk>/', ProductDetailView.as_view()),
-]
+# urlpatterns = [
+#     path('', ProductListView.as_view()),
+#     path('product/<int:pk>/', ProductDetailView.as_view()),
+# ]
