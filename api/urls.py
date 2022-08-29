@@ -1,7 +1,8 @@
 from django.urls import path
 
 
-from .views import ProductListView, ProductDetailView
+router = SimpleRouter()
+router.register("prodoucts", ProductViewSet, basename="products")
 
 
 
