@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-import { Navbar, Footer, Items } from "../components/all-components";
+import { Navbar, Footer, Products } from "../components/all-components";
 
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
             </div>
 
             <div>
-                <Items />
+                <Products />
             </div>
 
             <div>
