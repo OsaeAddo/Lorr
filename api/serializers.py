@@ -9,7 +9,7 @@ class ItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = Item
         fields = (
-            'item_name', 'price', 'discount_price', 
+            'id', 'item_name', 'price', 'discount_price', 
             'category', 'label', 'description'
         )
         
@@ -18,7 +18,7 @@ class OrderSerializer(serializers.ModelSerializer):
     class Meta:
         model = Order
         fields = (
-            'user', 'items',
+            'id', 'user', 'items',
             'start_date', 'ordered_date', 'ordered'
         )
         
@@ -27,7 +27,7 @@ class OrderItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = OrderItem
         fields = (
-            'user', 'item',
+            'id', 'user', 'item',
             'ordered', 'quantity'
         )
         
