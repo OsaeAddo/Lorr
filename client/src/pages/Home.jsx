@@ -4,7 +4,7 @@ import React from "react";
 
 
 
-import { Navbar, Footer, Products } from "../components/all-components";
+import { Navbar, Footer, Products, BottomBar } from "../components/all-components";
 
 
 const Home = () => {
@@ -18,6 +18,10 @@ const Home = () => {
 
             <div>
                 <Products />
+            </div>
+
+            <div>
+                <BottomBar />
             </div>
 
             <div>
