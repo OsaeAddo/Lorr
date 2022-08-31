@@ -119,7 +119,7 @@ export default function BottomAppBar() {
           <IconButton color="inherit" aria-label="category">
             <CategoryIcon />
           </IconButton>
-          
+
           <Box sx={{ flexGrow: 1 }} />
           <IconButton color="inherit">
             <SearchIcon />
