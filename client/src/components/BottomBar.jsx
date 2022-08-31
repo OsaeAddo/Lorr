@@ -116,9 +116,11 @@ export default function BottomAppBar() {
           <IconButton color="inherit" aria-label="open drawer">
             <MenuIcon />
           </IconButton>
-          <StyledFab color="secondary" aria-label="add">
-            <AddIcon />
-          </StyledFab>
+
+          <IconButton color="inherit" aria-label="category">
+            <CategoryIcon />
+          </IconButton>
+          
           <Box sx={{ flexGrow: 1 }} />
           <IconButton color="inherit">
             <SearchIcon />
