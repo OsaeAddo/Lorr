@@ -6,7 +6,7 @@ import logo from "../assets/logo/lorr-logo.jpeg"
 
 const Footer = () => {
     return (
-        <footer className="grid gap-4 text-center pt-9 pb-4 bg-gray-900 text-white">
+        <footer className="grid gap-4 text-center pt-9 pb-24 bg-gray-900 text-white">
             <div className="grid gap-4 justify-center items-center">
                 <section className="text-start">
                     <h2 className="font-bold text-2xl">Quicklinks</h2>
