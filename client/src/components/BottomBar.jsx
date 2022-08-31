@@ -114,7 +114,7 @@ export default function BottomAppBar() {
       <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
         <Toolbar>
           <IconButton color="inherit" aria-label="open drawer">
-            <MenuIcon />
+            <HomeOutlinedIcon />
           </IconButton>
 
           <IconButton color="inherit" aria-label="category">
