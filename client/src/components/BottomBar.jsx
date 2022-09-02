@@ -128,7 +128,8 @@ export default function BottomAppBar() {
             <IconButton color="inherit" aria-label="open drawer" sx={{ top: 'auto', bottom: 0, height: 20 }}>
                 <HomeOutlinedIcon />
             </IconButton>
-            <ListItemText style={{ fontSize: 2 }}>Home</ListItemText>
+            
+            <ListItemText sx={{ fontSize: 12 }}>Home</ListItemText>
           </List>
 
           <List sx={{ fontSize: 2, bottom: -9 }}>
