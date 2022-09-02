@@ -137,7 +137,7 @@ export default function BottomAppBar() {
             </IconButton>
             <ListItemText style={{fontSize: 2}}>Category</ListItemText>
           </List>
-
+        
           <List sx={{ fontSize: 2, bottom: -9 }}>
             <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 12 }}>
               <Badge badgeContent={4} color="secondary">
