@@ -135,6 +135,8 @@ export default function BottomAppBar() {
             <IconButton color="inherit" aria-label="category"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
               <CategoryIcon />
             </IconButton>
+            <ListItemText style={{fontSize: 2}}>Category</ListItemText>
+          </List>
 
           <Box sx={{ flexGrow: 1 }} />
           <IconButton color="inherit">
