@@ -132,7 +132,7 @@ export default function BottomAppBar() {
             <ListItemText sx={{ fontSize: 12 }}>Home</ListItemText>
           </List>
 
-          <List sx={{ fontSize: 2, bottom: -9 }}>
+          <List sx={{ fontSize: 2, bottom: -9, display: 'grid', justifyItems: 'center' }}>
             <IconButton color="inherit" aria-label="category"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
               <CategoryIcon />
             </IconButton>
