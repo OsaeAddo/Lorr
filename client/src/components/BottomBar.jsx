@@ -104,6 +104,12 @@ export default function BottomAppBar() {
                 <ListSubheader sx={{ bgcolor: 'background.paper' }}>
                   Yesterday
                 </ListSubheader>
+                
+              )}
+              {id === 5 && (
+                <ListSubheader sx={{ bgcolor: 'background.paper' }}>
+                Now
+              </ListSubheader>
               )}
 
               <ListItem button>
