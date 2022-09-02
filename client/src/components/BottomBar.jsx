@@ -148,7 +148,7 @@ export default function BottomAppBar() {
             <ListItemText>Cart</ListItemText>
           </List>
           
-          <List sx={{ fontSize: 2, bottom: -9 }}>
+          <List sx={{ fontSize: 2, bottom: -9, display: 'grid', justifyItems: 'center' }}>
             <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
               <PersonOutlineRoundedIcon />
             </IconButton>
