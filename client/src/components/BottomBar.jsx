@@ -20,8 +20,8 @@ import PersonOutlineRoundedIcon from '@mui/icons-material/PersonOutlineRounded';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
 import CategoryIcon from '@mui/icons-material/Category';
-import SearchIcon from '@mui/icons-material/Search';
-import MoreIcon from '@mui/icons-material/MoreVert';
+import { flexbox } from '@mui/system';
+import { Icon } from '@mui/material';
 
 const messages = [
   {
