@@ -139,7 +139,7 @@ export default function BottomAppBar() {
             <ListItemText style={{fontSize: 2}}>Category</ListItemText>
           </List>
         
-          <List sx={{ fontSize: 2, bottom: -9 }}>
+          <List sx={{ fontSize: 2, bottom: -9, display: 'grid', justifyItems: 'center' }}>
             <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 12 }}>
               <Badge badgeContent={4} color="secondary">
                 <ShoppingCartOutlinedIcon />
