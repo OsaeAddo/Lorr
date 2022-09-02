@@ -122,11 +122,12 @@ export default function BottomAppBar() {
           ))}
         </List>
       </Paper>
-      <AppBar className='' position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
-        <Toolbar>
-          <IconButton color="inherit" aria-label="open drawer">
-            <HomeOutlinedIcon />
-          </IconButton>
+      <AppBar position="fixed" color="primary" sx={{ top: 'auto', bottom: 0 }}>
+        <Toolbar style={{ display: 'flex', justifyContent: 'space-between', height: 60 }}>
+          <List sx={{ fontSize: 2, bottom: -9 }}>
+            <IconButton color="inherit" aria-label="open drawer" sx={{ top: 'auto', bottom: 0, height: 20 }}>
+                <HomeOutlinedIcon />
+            </IconButton>
 
           <IconButton color="inherit" aria-label="category">
             <CategoryIcon />
