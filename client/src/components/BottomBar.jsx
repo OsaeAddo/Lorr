@@ -81,6 +81,7 @@ const messages = [
 //   right: 0,
 //   margin: '0 auto',
 // });
+const barSections = ["Home", "Category", "Cart", "Profile"]
 
 export default function BottomAppBar() {
   return (
