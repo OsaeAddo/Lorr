@@ -131,9 +131,10 @@ export default function BottomAppBar() {
             <ListItemText style={{ fontSize: 2 }}>Home</ListItemText>
           </List>
 
-          <IconButton color="inherit" aria-label="category">
-            <CategoryIcon />
-          </IconButton>
+          <List sx={{ fontSize: 2, bottom: -9 }}>
+            <IconButton color="inherit" aria-label="category"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
+              <CategoryIcon />
+            </IconButton>
 
           <Box sx={{ flexGrow: 1 }} />
           <IconButton color="inherit">
