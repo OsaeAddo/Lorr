@@ -144,9 +144,15 @@ export default function BottomAppBar() {
                 <ShoppingCartOutlinedIcon />
               </Badge>
             </IconButton>
-          <IconButton color="inherit">
-            <MoreIcon />
-          </IconButton>
+            <ListItemText>Cart</ListItemText>
+          </List>
+          
+          <List sx={{ fontSize: 2, bottom: -9 }}>
+            <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
+              <PersonOutlineRoundedIcon />
+            </IconButton>
+            <ListItemText>Profile</ListItemText>
+          </List>
         </Toolbar>
       </AppBar>
     </React.Fragment>
