@@ -150,6 +150,18 @@ export default function BottomAppBar() {
                 </IconButton>
               </Tooltip>
               <Menu
+                sx={{ mt: '45px' }}
+                id="menu-appbar"
+                anchorEl={anchorElUser}
+                anchorOrigin = {{
+                  vertical: 'top',
+                  horizontal: 'right'
+                }}
+                keepMounted
+                transformOrigin={{
+                  
+                }}
+                open={Boolean(anchorElUser)}
               >
                 {
                   profileOptions.map((option) => {
