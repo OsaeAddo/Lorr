@@ -148,6 +148,18 @@ export default function BottomAppBar() {
                 <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
                   <PersonOutlineRoundedIcon />
                 </IconButton>
+              </Tooltip>
+              <Menu
+              >
+                {
+                  profileOptions.map((option) => {
+                    <MenuItem key={option} >
+                      <Typography textAlign="center">{option}</Typography>
+                    </MenuItem>
+                  })
+                }
+              </Menu>
+            </Box>
             <ListItemText>Profile</ListItemText>
           </List>
         </Toolbar>
