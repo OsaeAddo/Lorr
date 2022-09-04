@@ -3,6 +3,7 @@ import { motion } from "framer-motion"
 
 
 import logo from "../assets/logo/lorr-logo.jpeg"
+import logo1 from "../assets/logo/logo-lorr.png"
 
 const Footer = () => {
     return (
