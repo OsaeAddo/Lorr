@@ -143,6 +143,8 @@ export default function BottomAppBar() {
           </List>
           
           <List sx={{ fontSize: 2, bottom: -9, display: 'grid', justifyItems: 'center' }}>
+            <Box>
+              <Tooltip>
             <IconButton color="inherit"  sx={{ top: 'auto', bottom: 0, height: 20 }}>
               <PersonOutlineRoundedIcon />
             </IconButton>
