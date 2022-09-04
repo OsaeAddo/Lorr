@@ -78,6 +78,15 @@ const messages = [
 const profileOptions = ["Profile", "Account", "Dashboard", "Logout"]
 
 export default function BottomAppBar() {
+  const [anchorElUser, setAnchorElUser] = React.useState(null)
+
+  const handleOpenUserMenu = (event) => {
+    setAnchorElUser(event.currentTarget)
+  }
+  const handleCloseUserMenu = (event) => {
+    setAnchorElUser(null)
+  }
+
   return (
     <React.Fragment>
       <CssBaseline />
